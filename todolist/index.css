@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/earlyaccess/notosanstc.css');
+* {
+    position: relative;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(circle, #e9e4f0, #d3cce3);
+    color: darked;
+    letter-spacing: 2px;
+    font-family: 'Noto Sans TC', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-container {
+    width: 60%;
+    padding: 16px 0;
+}
+
+@media (max-width: 500px) {
+    .list-container {
+        width: 100%;
+    }
+}
+
+#list-form {
+    display: flex;
+    justify-content: space-around;
+}
+.list-form_add-item,
+.list-form_search-item {
+    width: 45%;
+}
+
+input {
+    background-color: transparent;
+    border: 2px solid chocolate;
+    border-radius: 100px;
+    padding: 16px;
+
+    text-indent: 8px;
+    color: darkred;
+    letter-spacing: 2px;
+
+    transition: 0.5s;
+
+}
+
+input:focus{
+    outline: none;
+}
+
+input[type=text],
+input[type=search] {
+    width: 100%
+}
+
+#add-item_input:focus,
+#search-item_input:focus{
+    background-color: chocolate;
+    color: #eee;
+}
+
+input[type=text] {
+    padding-right: 40px;
+}
+
+input[type=submit] {
+    border:none;
+    font-size: 16px;
+
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+input[type=search] {
+    text-indent: 24px;
+}
+
+#add-item_input:focus + input[type=submit] {
+    color: #eee;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.to-do-list:empty::before {
+    content: 'Nothing to do...';
+    display: block;
+    text-align: center;
+
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.finished-list:empty::before {
+    content: 'Nothing finished...';
+    display: block;
+    text-align: center;
+    
+    font-size: 12px;
+    font-weight: lighter;
+    }
+
+li{
+    border:1.5px solid transparent;
+    border-radius: 100px;
+    margin: 8px;
+    padding: 8px;
+
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-weight: bold;
+
+    transition: 0.5s;
+    animation: fadeIn 0.5s both;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.item__content {
+    max-width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item__action {
+    width: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="checkbox"]{
+    appearance: none;
+    padding: 8px;
+
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+input[type=checkbox]:checked,
+input[type=checkbox]:hover {
+    background-color: chocolate;
+}
+input[type=checkbox]:checked::after {
+    content: '✔';
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+
+    color:#eee;
+    font-weight: bold;
+}
+
+.fa-trash::before {
+    display: inline;
+    cursor: pointer;
+    content: '🗑️';
+    transition: 0.3s 0.1s;
+}
+.fa-trash::after {
+    content:'';
+    position: absolute;
+    right: -10px;
+    width: 3px;
+    height: 100%;
+
+    background-color: chocolate;
+    z-index: -1;
+
+    transition: 0.3s;
+}
+.fa-trash:hover{
+    color: #eee;
+}
+.fa-trash:hover::after{
+    width: 200%;
+}
+hr{
+    width: 80%;
+    border: 1px solid chocolate;
+    opacity: 0.5;
+}
