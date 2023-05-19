@@ -1,14 +1,14 @@
 body {
     width: 530px;
-    margin: 2% auto;/*세로 가로*/
+    margin : 2% auto;
     font-family: 'Source Sans Pro', sans-serif;
     letter-spacing: 5px;
-    font-size: 1.8rem;
+    font-size : 1.8rem;
 }
 
 .calculator {
     padding: 20px;
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);/*가로, 세로, 그림자 심도, 확장/축소*/
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .input {
@@ -19,7 +19,7 @@ body {
     text-align: right;
     margin-right: 6px;
     font-size: 2.5rem;
-    overflow-x: auto;/*x축의 오버플로우 방지 (스크롤이 생김)*/
+    overflow-x: auto;
 }
 .input:hover {
     border: 1px solid #bbb;
@@ -27,7 +27,7 @@ body {
 }
 
 .operators div {
-    display: inline-block; /*https://ofcourse.kr/css-course/display-%EC%86%8D%EC%84%B1*/
+    display: inline-block;
     border: 1px solid #bbb;
     width: 80px;
     text-align: center;
@@ -41,7 +41,7 @@ body {
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
     border-color: #aaa;
 }
-.operators div:active {
+.operators div:active{
     font-weight: bold;
 }
 
@@ -49,7 +49,7 @@ body {
     display: inline-block;
 }
 
-.numbers div {
+.numbers div{
     display: inline-block;
     border: 1px solid #ddd;
     width: 80px;
@@ -59,7 +59,7 @@ body {
     cursor: pointer;
     background-color: #f9f9f9;
 }
-.numbers div:hover {
+.numbers div:hover{
     background-color: #f1f1f1;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
     border-color: #bbb;
@@ -68,24 +68,24 @@ body {
     font-weight: bold;
 }
 
-/* https://stackoverflow.com/questions/6489110/differences-between-div-class-class-and-class-div */
-div.equal {
+.equal {
     display: inline-block;
     border: 1px solid #3079ED;
     width: 17%;
     text-align: center;
     padding: 127px 10px;
     margin: 10px 6px 10px 0;
-    vertical-align: top;/* inline-block에서 top 부분으로 수직정렬*/
+    vertical-align: top;
     cursor: pointer;
-    color: #FFF;
+    color: #fff;
     background-color: #4d90fe;
 }
-div.equal:hover {
+.equal:hover {
     background-color: #307CF9;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
-    border-color: #1857BB;
+    border-color: #1857BB; 
 }
-div.equal:active {
+.equal:active {
     font-weight: bold;
 }
+
