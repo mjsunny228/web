@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+button {
+    background: pink;
+    border: 0;
+    padding: 20px 50px;
+}
+
+.a {
+    background-color:pink;
+}
+
+.b{
+    width: 1000px;
+    height: 600px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.text h3 {
+    padding-left: 15px;
+}
+
+.title {
+    font-size: 30px;
+    text-align: center;
+}
+
+.pic {
+    background-image: url("1.jpg");
+    margin-top: 20px;
+    float: left;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    
+}
+
+.text {
+    margin-left: 20px;
+    margin-top: 20px;
+    float:left;
+    width : 450px;
+    height:450px;
+    background-color: pink;
+}
+
+.c {
+    text-align: center;
+}
+
+.c button:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <title>Todo list</title>
+    </head>
+    <body>
+        <div class="list-container">
+            <header>
+                <form id="list-form">
+                    <div class="list-form_add-item">
+                        <input
+                            type="text"
+                            id="add-item_input"
+                            required="required"
+                            autofocus="autofocus">
+                        <input type="submit" value="✚">
+                    </div>
+                    <div class="list-form_search-item">
+                        <input type="search" id="search-item_input">
+                    </div>
+                </form>
+            </header>
+            <section>
+                <ul class="to-do-list"></ul>
+                <hr>
+                <ul class="finished-list"></ul>
+            </section>
+        </div>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>

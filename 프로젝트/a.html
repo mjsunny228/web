@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="a.css">
+</head>
+<body>
+    <div class = "wrapper">
+        <nav class = "menu">
+            <button aria-expanded="false" aria-control🍷
+            Ws="menu-list">
+                <span class="open">☰</span>
+                <span class="close">×</span>
+                Menu
+            </button>
+            <ul id = "menu-list">
+                <li>
+                    <a href>TACOS</a>
+                </li>
+                <li>
+                    <a href>BEERS</a>
+                </li>
+                <li>
+                    <a href>WINES</a>
+                </li>
+                <li>
+                    <a href>DESSERTS</a>
+                </li>
+                <li>
+                    <a href>RESERVATIONS</a>
+                </li>
+            </ul>
+        </nav>
+        <div class = "top">
+            <header class = "hero">
+                <h1>Terry's Taco Joint</h1>
+                <p>Pretty Good Tacos!</p>
+            </header>
+            <div class = "cta cta1">
+                <p class = "price">$1.99</p>
+                <p>Tacos</p>
+            </div>
+            <div class = "cta cta2">
+                <p class = "price">$3.99</p>
+                <p>Kombucha</p>
+            </div>
+        </div>
+        <section class = "features">
+            <div class = "feature">
+                <span class = "icon">🌮</span>
+                <h3>Tacos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+            </div>
+            <div class = "feature">
+                <span class = "icon">🍺</span>
+                <h3>Beer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+            </div>
+            <div class = "feature">
+                <span class = "icon">🍷</span>
+                <h3>Wine</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+            </div>
+            <div class = "feature">
+                <span class = "icon">🎵</span>
+                <h3>Music</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+            </div>
+        </section>
+        <section class = "about">
+            <img src = "img/queso-taco.png">
+            <div class = "about__details">
+                <h2>Featured Taco</h2>
+                <p>Slim Profile, easy to hold and loaded with cheese.</p>
+                <p>This is the one you have been waiting for</p>
+                <button>Learn More →</button>
+            </div>
+        </section>
+        <section class = "gallery">
+            <h2>Instant Grams</h2>
+            <img src = "img/1.jpg">
+            <img src = "img/2.jpg">
+            <img src = "img/3.jpg">
+            <img src = "img/4.jpg">
+            <img src = "img/5.jpg">
+            <img src = "img/6.jpg">
+            <img src = "img/7.jpg">
+            <img src = "img/8.jpg">
+            <img src = "img/9.jpg">
+            <img src = "img/10.jpg">
+        </section>
+    </div>
+    <script>
+        const navButton = document.querySelector('button[aria-expanded]');
+    
+        function toggleNav({ target }) {
+          const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+          navButton.setAttribute('aria-expanded', !expanded);
+        }
+    
+        navButton.addEventListener('click', toggleNav);
+      </script>
+</body>
+</html>
